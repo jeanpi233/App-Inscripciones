@@ -1,4 +1,4 @@
-<h1 align="left">AApp Inscripciones</h1>
+<h1 align="left">App Inscripciones</h1>
 
 ###
 
