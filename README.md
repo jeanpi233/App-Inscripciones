@@ -14,7 +14,7 @@
 
 ###
 
-<h2 align="left">Tecnologías usasdas</h2>
+<h2 align="left">Tecnologías usadas</h2>
 
 ###
 
