@@ -1,12 +1,37 @@
-# React + Vite
+<h1 align="left">AApp Inscripciones</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+###
 
-Currently, two official plugins are available:
+<h4 align="left">soy Jeanpierry Moreno.<br><br>Este proyecto es una aplicación web que permite llevar un registro de inscripciones académicas. Incluye un sistema de login con token de acceso para proteger tanto la página principal como la información del usuario.<br><br>-Entre sus funcionalidades se encuentran:<br><br>-Registro de nuevas inscripciones.<br><br>-Edición y eliminación de inscripciones existentes.<br><br>-Autenticación de usuarios mediante token.<br><br>-Protección de rutas para evitar accesos no autorizados.<br><br>El objetivo principal del proyecto es facilitar la gestión de inscripciones de manera segura, ordenada y funcional.</h4>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+###
 
-## Expanding the ESLint configuration
+<h2 align="left">¿Cómo funciona la aplicación?</h2>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+###
+
+<h4 align="left">El usuario puede registrarse o iniciar sesión con sus credenciales.<br><br>Al iniciar sesión correctamente, es redirigido a la página principal de la app.<br><br>En esa página principal se muestra un menú lateral de navegación, desde donde se accede a las distintas funcionalidades.<br><br>El usuario puede:<br><br>-Crear nuevas suscripciones<br><br>-Editar o eliminar las existentes<br><br>-Toda la información se guarda en una base de datos para asegurar su persistencia.<br><br>-Las rutas importantes están protegidas mediante un token de acceso, que evita accesos no autorizados.</h4>
+
+###
+
+<h2 align="left">Tecnologías usasdas</h2>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+</div>
+
+###
