@@ -3,11 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 260px;
-  padding: 17px 55px;
-  margin: 55px 16px;
+  padding: 41px 0px;
+  margin: 15px 9px;
   text-align: center;
+  padding: 30px 15px;
   position: relative;
   cursor: pointer;
   box-shadow: 0 10px 15px -3px rgba(33, 150, 243, 0.4),
@@ -16,13 +17,14 @@
   background-color: #6b6ecc;
   background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
 }
-.contenedor_tarjetas :hover {
-  transform: scale(1.1);
+.tarjeta:hover {
+  transform: scale(1.05);
   transition: all 0.3s ease;
 }
+
 .contenedor_tarjetas {
   display: flex;
-  gap: 38px;
+  gap: 9px;
   flex-wrap: nowrap;
   overflow-x: hidden; /* <--- Para evitar el scroll manual */
   scroll-behavior: smooth;
@@ -33,11 +35,19 @@
   z-index: 1;
 }
 
-
+.contenido_tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 90%;
+  word-wrap: break-word;
+}
 .contenido_tarjeta .precio {
   color: white;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 43px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
 }
 
@@ -52,14 +62,15 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.64);
   margin-top: 10px;
-  font-size: 25px;
-  letter-spacing: 1px;
+  font-size: 21px;
+  letter-spacing: 0px;
 }
 
 .button {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  margin-top: 15px;
   border: none;
   outline: none;
   text-decoration: none;
@@ -70,9 +81,12 @@
   padding: 0.75rem 1.5rem;
   background-color: rgb(33 150 243);
   border-radius: 0.5rem;
-  width: 90%;
+  width: 79%;
   text-shadow: 0px 4px 18px #2c3442;
   transition: all 0.3s ease;
+}
+.button:hover{
+  transform: scale(1.05);
 }
 .contenedor_tarjetas {
   display: flex;
@@ -91,7 +105,8 @@
   margin-left: 268px;
 
   color: white;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   font-weight: 500;
   text-align: center;
+  margin-left: 20px
 }

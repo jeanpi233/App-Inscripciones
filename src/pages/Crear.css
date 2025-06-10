@@ -65,3 +65,19 @@
   border: none;
   outline: none;
 }
+@media (max-width: 600px) {
+  .form_sub {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .form_sub div {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form_sub div input,
+  .form_sub div button {
+    width: 100%;
+  }
+}

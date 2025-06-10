@@ -2,7 +2,9 @@ import { Outlet } from "react-router-dom";
 
 const Contenido = () => {
   return (
-    <Outlet/>
+    <div className="contenido">
+      <Outlet />
+    </div>
   );
 };
 
