@@ -97,7 +97,7 @@ const EditarSub = () => {
           value={fecha}
           onChange={(e) => setFecha(e.target.value)}
           placeholder="Fecha de renovación"
-          type="text"
+          type="date"
           name="fecha"
         />
       </div>

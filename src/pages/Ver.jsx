@@ -35,7 +35,7 @@ const Ver = () => {
   return (
     <>
       {inscripciones.length === 0 ? (
-        <div>
+        <div className="contenedorTextoVer">
           <p className="descripcion1">No hay inscripciones para este usuario.</p>
         </div>
       ) : (

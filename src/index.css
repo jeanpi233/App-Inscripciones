@@ -12,7 +12,7 @@ body {
   width: 20%;
   height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px;
@@ -28,15 +28,16 @@ body {
   border: 3px solid transparent;
   background-clip: padding-box;
 }
-
-/* Efecto al pasar el mouse */
+.menu-lateral h1 {
+  margin: 30px 0;
+}
 .menu-lateral img:hover {
   transform: scale(1.05) rotate(1deg);
   border: 3px solid #79b4f8fd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .contenido {
-  flex: 1; /* Ocupa el espacio que sobra del menú */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +92,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  margin: 20px 0;
 }
 
 .fila {
@@ -132,59 +134,6 @@ body,
   height: 100%;
 }
 
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column
-  }
-
-  .menu-lateral {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-  }
-
-@media (max-width: 768px) {
-  .menu-lateral img {
-    width: 145px;
-    height: auto;
-    max-width: 100%;
-    object-fit: contain;
-    margin: 5px;
-    border-radius: 8px;
-  }
-}
-
-  .menu-lateral__nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .fila {
-    width: auto;
-    padding: 8px 12px;
-    margin: 5px;
-    font-size: 0.9rem;
-  }
-
-  .contenido {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-  }
-
-  .contenido h1 {
-    font-size: 1.5rem;
-  }
-
-  .contenido p {
-    font-size: 1rem;
-  }
-}
-/* Botón hamburguesa */
 .hamburguesa {
   display: none;
   position: fixed;
@@ -199,8 +148,11 @@ body,
   cursor: pointer;
 }
 
-/* Estilos responsive */
 @media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
   .menu-lateral {
     position: fixed;
     left: -100%;
@@ -212,23 +164,32 @@ body,
     transition: left 0.3s ease;
   }
 
+  .menu-lateral img {
+    max-width: 100%;
+    object-fit: contain;
+    margin: 5px;
+  }
+
+  .fila {
+    width: 100px;
+    padding: 8px 12px;
+    margin: 5px;
+    font-size: 0.9rem;
+  }
+
   .menu-lateral.activo {
     left: 0;
   }
 
   .contenido {
     width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
   }
 
   .hamburguesa {
     display: block;
-  }
-}
-@media (max-width: 768px) {
-  .contenido {
-    width: 100%;
-    padding: 20px;
-    height: auto;
   }
 
   .contenido h1 {
@@ -239,7 +200,7 @@ body,
 
   .contenido p {
     font-size: 1rem;
-    max-width: 100%;
+    width: 100%;
     padding: 0 15px;
     margin-bottom: 25px;
   }

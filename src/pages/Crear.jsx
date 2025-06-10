@@ -1,6 +1,6 @@
 import "./Crear.css";
 import { useEffect, useState } from "react";
-import { alertaRedireccion } from "../helpers/funciones";
+import { alertaRedireccion, alertaGeneral} from "../helpers/funciones";
 import { useNavigate } from "react-router-dom";
  let apiInscripciones = "https://apiprueba-awm8.onrender.com/inscripciones";
 
@@ -33,7 +33,10 @@ const Crear = () => {
       categoria: categoria,
       fecha: fecha,
     };
-    fetch(apiInscripciones, {
+    if(!nombre || !costo || !categoria || !fecha) {
+      alertaGeneral("Error","Completa todos los campos","error")
+    } else {
+      fetch(apiInscripciones, {
       method: "POST",
       body: JSON.stringify(nuevaInscripcion),
     }).then((response) => response.json())
@@ -46,6 +49,7 @@ const Crear = () => {
         alertaRedireccion(redireccion, "sub registrada", "/home/ver");
       })
       .catch((error) => console.log(error));
+    }
   }
 
 
@@ -90,7 +94,7 @@ const Crear = () => {
         <input
           onChange={(e) => setFecha(e.target.value)}
           placeholder="Fecha de renovación"
-          type="text"
+          type="date"
           name="fecha"
           id="fecha-renovacion"
         />
