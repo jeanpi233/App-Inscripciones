@@ -2,7 +2,7 @@ import Home from "../Home";
 import Login from "../pages/Login";
 import Crear from "../pages/Crear";
 import Ver from "../pages/Ver";
-import Inicio from "../pages/inicio";
+import Inicio from "../pages/Inicio";
 import EditarSub from "../pages/EditarSub";
 
 export let Enrutador = [
